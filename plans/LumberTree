@@ -1,0 +1,13 @@
+LumberTree = Plan.getPlan()
+
+function getPlan() 
+  return LumberTree:new{
+        name = "Lumbering the first tree"
+      }
+end
+
+    
+
+function LumberTree:execute() 
+  Block.mineOre(INV.WOOD)
+end
