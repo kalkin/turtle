@@ -1,12 +1,10 @@
-
-
-
 Plan = { 
   name = "Basic Plan",
   desc = "Just a basic plan",
   stack = {}, -- instructions stack
   cur = false, -- pointer to current instruction
   help = "Default Help", -- help string
+  state = "[ ]",
   debug = true,
   }
   
@@ -41,7 +39,7 @@ function Plan:start()
       if  result then 
         p.state = "[X]"
       else
-        self.cur.state = "[E]"
+        p.state = "[E]"
         print (p.err)
       end
       if debug then print(p.g.." | "..result .. " | ") end

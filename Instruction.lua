@@ -5,7 +5,7 @@ DIR_D = 1
 Instruction = {
   name = "Basic Ins",
   desc = "Just a basic instruction",
-  err = "An error occured",
+  err = "Execute method not implemented",
   state = "[ ]",
   debug = true
 }
