@@ -1,3 +1,2 @@
+bin/**
 rom/**
-xapi/*
-!xapi/*.lua
