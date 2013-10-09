@@ -1,12 +1,10 @@
-os.loadAPI("plans/Plan")
-
-FuelUpPlan = Plan.getPlan()
+FuelUpPlan = Plan.new()
 
 function FuelUpPlan:execute()
   return turtle.refuel(1)
 end
 
-function getPlan() 
+function new() 
   return FuelUpPlan:new{
       name = "Initial Fuell Up",
       desc = "Filling my tanks and firing up",
